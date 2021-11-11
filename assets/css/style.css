@@ -1,0 +1,133 @@
+/*? RESET STYLE */
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 16px;
+   color: black;
+   background-color: white;
+   text-rendering: optimizeLegibility;
+   scroll-behavior: smooth;
+}
+ul {
+   list-style-type: none;
+}
+a {
+   text-decoration: none;
+   color: black;
+}
+button,
+input {
+   border: none;
+   outline: none;
+   -webkit-tap-highlight-color: transparent;
+}
+button {
+   cursor: pointer;
+}
+img {
+   display: block;
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+   object-position: center;
+}
+/*? CUSTOM STYLE */
+.navigation {
+   height: 100vh;
+   position: fixed;
+   display: flex;
+   flex-direction: column;
+   background-color: rgb(32, 32, 32);
+}
+.navigation__link {
+   padding: 10px 30px;
+   transition: all ease 0.3s;
+}
+.navigation__link:hover {
+   cursor: pointer;
+   background-color: #444;
+}
+.navigation__link + .navigation__link {
+   border-top: 1px solid gray;
+}
+.navigation__link a {
+   color: white;
+}
+.navigation__linkService {
+   position: relative;
+}
+.navigation__linkService:hover .navigation__service {
+   display: flex;
+}
+.navigation__service {
+   display: none;
+   background-color: rgb(32, 32, 32);
+   position: absolute;
+   top: 0;
+   left: 100%;
+   flex-direction: column;
+}
+.navigation__serviceLink {
+   color: white;
+   padding: 10px 30px;
+   transition: all ease 0.3s;
+}
+.navigation__serviceLink:hover {
+   background-color: #444;
+}
+.navigation__serviceLink + .navigation__serviceLink {
+   border-top: 1px solid gray;
+}
+/*? header */
+.header {
+   padding-left: 139px;
+   margin: 0 auto;
+   text-align: center;
+}
+.header__heading {
+   margin-top: 12px;
+   font-size: 18px;
+   color: gray;
+}
+.header__logo {
+   margin: 0 auto;
+   width: 300px;
+}
+/*? main */
+.main {
+   width: 100%;
+   max-width: 1100px;
+   margin: 12px auto 0;
+   padding-left: 139px;
+}
+.introduction {
+   background-color: rgb(196, 196, 196);
+   padding: 30px 0;
+   width: 100%;
+   text-align: center;
+}
+.introduction__paragraph {
+   margin: 12px auto 0;
+   max-width: 700px;
+   font-size: 0.9rem;
+}
+/*? courses */
+.courses {
+   margin-top: 20px;
+   display: flex;
+   justify-content: space-between;
+}
+.coursers__itemHeading {
+   font-size: 1rem;
+   margin-bottom: 20px;
+}
+.courses__itemImage {
+   width: 120px;
+   float: left;
+}
